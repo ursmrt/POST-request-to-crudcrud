@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="AMIT.CSS" />
+  </head>
+  <body>
+
+    <form id="new" onsubmit="saveToLocalStorage(event)">
+      <h1 >EXPENSE TRACKER</h1><br><hr>
+      <label for="food" >PRICE:</label><br>
+      <input type="text" id="food" name="food" required  /><br>
+
+      <label for="category">CATEGORY:</label><br>
+<select name="category" id="category">
+        <option value="Starter">Starter</option>
+        <option value="lunch">Lunch</option>
+        <option value="chinese">Chinese</option>
+        <option value="Drink">Drink</option>
+      </select><br>
+      <label for="foodname">DESCRIPTION:</label><br>
+      <input type="text" id="foodname" name="foodname" required  /><br>
+      <button>Submit</button>
+      <ul id="listOfUsers"></ul><ul id="listOfUsers"></ul>
+      </form>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.0/axios.min.js"></script>
+
+ <script src="EXPENSE.js"></script>
+  </body>
+</html>
